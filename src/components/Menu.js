@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
 import MenuItem from './MenuItem';
-
+import React, { Component } from 'react';
 
 class Menu extends React.Component {
     constructor() {
@@ -10,20 +9,22 @@ class Menu extends React.Component {
          [
             {
                "title":"Home",
-               "link":"#"
+               "link":"/"
             },
             {
-               "title":"Photo Gallery",
-               "link":"#"
+               "title":"About",
+               "link":"about"
             }
          ]
       }
    }
    render() {
       return (
-          <ul className='menu-top'>
-            {this.state.menu.map((menu, i) => <MenuItem key={i} data={menu} />)}
-          </ul>
+          <div className='menu-content'>
+            <ul className='menu-top'>
+              {this.state.menu.map((menu, i) => <MenuItem key={i} data={menu} />)}
+            </ul>
+          </div>
       );
    }
 }
