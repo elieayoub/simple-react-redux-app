@@ -1,7 +1,6 @@
 import Home from './Home.js'
 import About from './About.js'
 import TodoExample from './TodoExample.js'
-import { CounterButton } from '../components/CounterButton';
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 

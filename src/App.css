@@ -68,3 +68,12 @@
   background-color: #DDD;
   margin:5px auto;
 }
+
+/* colors */
+.red {
+  color: #FF0000;
+}
+.bg-yellow {
+  background-color: #FFFF00
+}
+/* /colors */
