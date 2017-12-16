@@ -1,23 +1,10 @@
-const INCREMENT = 'INCREMENT';
+import { combineReducers } from 'redux'
+import todos from './todos'
+import counter from './counter'
+import visibilityFilter from './visibilityFilter'
 
-const initialState = {
-  count: 0
-};
-
-export default function reducer(state = initialState, action = {}) {
-  switch (action.type) {
-    case INCREMENT:
-      const {count} = state;
-      return {
-        count: count + 1
-      };
-    default:
-      return state;
-  }
-}
-
-export function increment() {
-  return {
-    type: INCREMENT
-  };
-}
+export default combineReducers({
+  todos,
+  counter,
+  visibilityFilter
+})

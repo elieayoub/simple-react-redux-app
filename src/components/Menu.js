@@ -14,6 +14,10 @@ class Menu extends React.Component {
             {
                "title":"About",
                "link":"about"
+            },
+            {
+               "title":"To Do Example",
+               "link":"todoExample"
             }
          ]
       }
